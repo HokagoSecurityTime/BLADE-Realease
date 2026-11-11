@@ -1,0 +1,22 @@
+BLADE — Runtime Authorization Proxy
+Copyright 2026 The BLADE authors.
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+------------------------------------------------------------------------------
+Third-party / optional components
+------------------------------------------------------------------------------
+
+LoRA classifier path (BLADE_CLASSIFIER=lora):
+  The fine-tuned adapter is based on Qwen2.5-7B-Instruct (Alibaba Cloud),
+  licensed under the Apache License 2.0. The adapter and GGUF weights are
+  distributed via the main BLADE repository's GitHub Release, not in this
+  package. Running the lora path requires a local Ollama server.
+
+Runtime dependencies are distributed under their own licenses, including:
+  FastAPI (MIT), aiohttp (Apache-2.0), pydantic (MIT), uvicorn (BSD-3-Clause),
+  httpx (BSD-3-Clause), PyYAML (MIT), PyJWT (MIT), SQLAlchemy (MIT),
+  redis-py (MIT), python-multipart (Apache-2.0).
+
+Bundled dashboard build (dashboard_dist/) is produced from the dashboard
+source (React, MIT) in the main BLADE repository.
